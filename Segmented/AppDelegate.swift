@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Segmented
-//
-//  Created by Natalia Harateh on 5/18/19.
-//  Copyright © 2019 Natalia Harateh. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +7,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
         return true
     }
 
